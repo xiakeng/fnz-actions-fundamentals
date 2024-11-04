@@ -22,4 +22,4 @@ jobs:
       - name: output branch
         run: echo "event name:" ${{ github.ref_name }}
       - name: output files
-        run: git ls-files 
+        run: ls ${{ github.workspace }}
