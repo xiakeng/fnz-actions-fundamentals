@@ -23,4 +23,5 @@ jobs:
         run: echo "event name:" ${{ github.ref }}
       - name: output files
         run: |
-          echo ls ${{ github.workspace }}
+          $command = $(ls ${{ github.workspace }})
+          echo $command
